@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     // output (example): KeyboardEvent {...}
     // complete: không có gì log.
     // fromEvent(input, 'keydown').subscribe(observer);
-    fromEvent(document, 'click');
+    // fromEvent(document, 'click');
   }
 
 }
