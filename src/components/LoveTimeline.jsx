@@ -107,7 +107,7 @@ export default function LoveTimeline({ setHideAllContent }) {
             className="mt-10 px-6 py-3 bg-pink-500 text-white rounded-full shadow-md hover:bg-pink-600 transition"
             onClick={handleOpenVideo}
           >
-            💌 Bé yêu có một lời nhắn 💌
+            💌 Follow me nhé !!! 💌
           </motion.button>
         ) : (
           <motion.div
@@ -118,7 +118,7 @@ export default function LoveTimeline({ setHideAllContent }) {
           >
             <video
               className="w-full h-full"
-              src="/src/assets/video/video.mp4" //Video cuối ở đây
+              src="/video/video.mp4" //Video cuối ở đây
               controls
               autoPlay
               onEnded={() => setVideoEnded(true)}
@@ -181,7 +181,7 @@ function TimelineSection({ messageText, textPosition, sectionIndex, textColor })
     })), []);
 
   const renderImage = () => {
-    const imgSrc = `/src/assets/images/image${sectionIndex + 1}.jpg`; // Chèn ảnh vào đây, nhớ đổi tên ảnh cho đúng nhé
+    const imgSrc = `/images/image${sectionIndex + 1}.jpg`; // Chèn ảnh vào đây, nhớ đổi tên ảnh cho đúng nhé
     return (
       <motion.img
         src={imgSrc}
