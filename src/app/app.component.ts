@@ -11,8 +11,8 @@ import { fromEvent, Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    const btn = document.querySelector('#btn');
-    const input = document.querySelector('#input');
+    // const btn = document.querySelector('#btn');
+    // const input = document.querySelector('#input');
 
     // output (example): MouseEvent {...}
     // complete: không có gì log.
