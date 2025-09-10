@@ -23,7 +23,7 @@ export default function App() {
   // Chỉ tạo một bản audio duy nhất
   useEffect(() => {
     if (!window.__audioInstance__) {
-      const audio = new Audio("/love-song.mp3"); // Đường dẫn đến file nhạc
+      const audio = new Audio("/video/22.mp3"); // Đường dẫn đến file nhạc
       audio.volume = 0.7;
       window.__audioInstance__ = audio;
     }
