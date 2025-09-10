@@ -181,7 +181,7 @@ function TimelineSection({ messageText, textPosition, sectionIndex, textColor })
     })), []);
 
   const renderImage = () => {
-    const imgSrc = `/images/image${sectionIndex + 1}.jpg`; // Chèn ảnh vào đây, nhớ đổi tên ảnh cho đúng nhé
+    const imgSrc = new URL(`/images/image${sectionIndex + 1}.jpg`).href; // Chèn ảnh vào đây, nhớ đổi tên ảnh cho đúng nhé
     return (
       <motion.img
         src={imgSrc}
